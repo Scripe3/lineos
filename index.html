@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Line OS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@font-face {
+    font-family: 'Gravity';
+    src: url('fonts/gravity/Gravity-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-Italic';
+    src: url('fonts/gravity/Gravity-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-Light';
+    src: url('fonts/gravity/Gravity-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-LightItalic';
+    src: url('fonts/gravity/Gravity-LightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-UltraLight';
+    src: url('fonts/gravity/Gravity-UltraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-UltraLightItalic';
+    src: url('fonts/gravity/Gravity-UltraLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-Bold';
+    src: url('fonts/gravity/Gravity-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-BoldItalic';
+    src: url('fonts/gravity/Gravity-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-Book';
+    src: url('fonts/gravity/Gravity-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gravity-BookItalic';
+    src: url('fonts/gravity/Gravity-BookItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gravity', Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00c3ff;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.navbar ul li a:hover {
+    color: #06c5ff;
+    transform: scale(1.05);
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: #0400ff;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    background: #00c3ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.buttons a:hover {
+    transform: scale(1.05);
+    background: #06c5ff;
+}
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,255,204,0.1);
+}
+
+.card h3 {
+    color: #00c3ff;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.5;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <a href="/"><img src="images/logo.png" alt="Line OS"></a>
+    </div>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="/devices/">Devices</a></li>
+        <li><a href="https://github.com/Scripe3/line-os-manifest">Source</a></li>
+        <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+</div>
+
+<header>
+    <img src="images/logo.png" alt="Line OS" width="290px">
+    <p>Fast, clean and free.</p>
+
+    <div class="buttons">
+        <a href="devices/index.html">Devices</a>
+        <a href="https://github.com/Scripe3/line-os-manifest">Source</a>
+        <a href="https://github.com/Scripe3/line-os-gms-arc/releases/download/a10-gms/Line-GMS-arm64-10.0-20260112.zip" target="_blank">Install GMS</a>
+    </div>
+</header>
+
+<div class="section">
+    <h2>What is Line OS?</h2>
+    <p>
+        Line OS is a Android Distrobution focused on speed, stability and simplicity.
+        Based on the open-source Android ecosystem, it removes bloat, improves performance
+        and gives you full control over your device.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Why Line OS?</h2>
+    <div class="features">
+        <div class="card">
+            <h3>Fast</h3>
+            <p>Optimized system, less background processes, more speed.</p>
+        </div>
+        <div class="card">
+            <h3>Secure</h3>
+            <p>Trust helps you understand the state of your device's security and warns you about possible threats.</p>
+        </div>
+        <div class="card">
+            <h3>Clean</h3>
+            <p>No ads, no trackers, no unnecessary apps.</p>
+        </div>
+        <div class="card">
+            <h3>Latest Version</h3>
+            <p>It upgrades your device's operating system. This allows your device to perform better.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    Line OS Project – Based on Android Open Source Project<br>
+    © 2025 - 2026 Line OS
+</footer>
+
+</body>
+</html>
